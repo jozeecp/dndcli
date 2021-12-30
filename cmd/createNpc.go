@@ -44,6 +44,7 @@ func init() {
 }
 
 func getNpcStats() {
+	rand.Seed(time.Now().UnixNano())
 	str := rand.Intn(24-4) + 4
 	dex := rand.Intn(24-4) + 4
 	con := rand.Intn(24-4) + 4
